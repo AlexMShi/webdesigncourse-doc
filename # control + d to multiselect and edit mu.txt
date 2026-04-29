@@ -1,0 +1,13 @@
+# control + d to multiselect and edit multiple words
+[ ] install visual studio code
+[ ] visit page with course material: www.academis.eu/webdev
+[ ] ask Merle HTML plugins for VS code
+
+apple
+banana
+apple
+orange
+apple
+apple
+
+# word wrap -- alt+z or option + z

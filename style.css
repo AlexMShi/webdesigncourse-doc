@@ -1,0 +1,32 @@
+    *{
+        color:hotpink
+    }/*用来设置默认色，意味着除了独立设置过颜色的段落之外其他的颜色全部都是这个*/
+    /* "*" > "tag" > "class" > "id" > "important"*/
+    body{
+        background-color: rgb(234, 231, 181); /* 可以点那个颜色的小方块来选颜色 color picker*/
+    }
+    h1{
+        color: #f52b2b; /* hexadecimal code*/ /*十六进制*/
+    }
+    th{
+        color: blueviolet;
+    }
+
+    li{
+        border: 2px solid blue;
+    }
+
+    .green{
+        border: 2px solid green;
+    }/* this targets all the class green*/
+    li.green{
+        border: 2px solid green;
+        margin: 35px;
+        padding: 10px;
+    }/*This targets all the class green under the li tag*/
+    /*Margin creates space between the background and the box of text*/
+    /*Pading creates space between the box of text and the text*/
+    
+    #about {
+        margin: auto 60px;
+    }

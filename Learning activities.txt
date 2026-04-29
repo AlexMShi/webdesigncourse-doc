@@ -1,0 +1,5 @@
+Learning activities
+
+1. SUBURI - fast,short repeat --> muscle memory
+2. KATA - Problem with a known solution, it has a wider perspective and it aim for perfection (websites for this : codewars/Leetcode/Adventofcode)
+3. RANOORI - freestyle coding, pick your own problem

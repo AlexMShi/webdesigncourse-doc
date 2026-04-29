@@ -1,0 +1,15 @@
+HTTP get: mysite.pyany.org?user=kristian&text=bananas --> this has 2048 characters limits
+HTTP post mysite.pyany.org/submit
+payload{ "User" : "Kristian",
+    "tex" : "bananas",
+    "File" : "5AC"
+}
+<form method = "Post"> <input name ="user"> </form> --> this has unlimited data.
+
+urls.py : GET / (main page of the website) -> empty form, this empty form means when there is no submit the web will be load at this page.
+POST / submit -> read from data
+
+
+Example:
+form.html ->JavaScript this simple form needs only a JavaScript no need of django
+But JavaScript can only run locally

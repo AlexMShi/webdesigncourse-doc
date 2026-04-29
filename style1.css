@@ -1,0 +1,10 @@
+body {
+    background-color: slateblue;
+    color: white;
+}
+.main {
+    color: lightgrey;
+}
+#subheading1 {
+    margin: 50px;
+}

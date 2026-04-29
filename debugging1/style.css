@@ -1,0 +1,25 @@
+
+img {
+    /*margin: 30px;*/
+}
+main {
+    background-color: #ffcccc;
+    padding: 30px;
+}
+header, footer {
+    background-color: lightgray;
+    margin: 0px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+/*
+.main_container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.item {
+    width: 100%;
+}*/

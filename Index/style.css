@@ -1,0 +1,23 @@
+*{
+    background-color: aquamarine;
+}
+
+.container{
+    background-color: rgb(33, 47, 0);
+    padding: 50px;
+    display: flex;
+    /*default of flex direction is row*/
+    /*flex-direction: row;*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 1000px;
+}
+
+.item{
+    background-color: rgb(24, 78, 50);
+    padding: 20px;
+    margin: 20px;
+    color: rgb(129, 218, 184);
+    font-size: 40px;
+}

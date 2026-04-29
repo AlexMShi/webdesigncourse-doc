@@ -1,0 +1,9 @@
+ 1. dir(or ls) -- list the contents (get information on user folders)
+ 2. cd -- get into folders, can work with multiple folders like <project\djangogirls> (windows "\" macos or linux "/")
+ sometimes you can use tab to auto complete
+ 2.2 cd \ or / back to main directory
+ 3. pwd (get the location of current working directory): cd in anaconda prompt and cmd, pwd in powershell
+ 4.cp(copy) copy a file (cp filename + foldername\ can copy this file to the folder) (cp filename + new name can copy this file into a new name)
+ 5.mkdir create a folder
+ 6. rm or del to delete a document
+ 7. rmdir delete the folder

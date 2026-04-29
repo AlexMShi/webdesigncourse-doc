@@ -1,0 +1,27 @@
+body {
+    background-color: rgba(248, 240, 184, 0.886);
+}
+header {
+    background-color: slateblue;
+    width: 100%;
+    padding: 50px;
+}
+footer {
+    background-color: slateblue;
+    width: 100%;
+    padding: 50px;
+}
+.main {
+    background-color: rgba(248, 240, 184, 0.886);
+    color: black;
+    height: 100%;
+}
+
+
+.container {
+	display: flex;
+    flex-direction: column;
+	justify-content: center;
+	align-items: center;
+    height: 100%;
+}
