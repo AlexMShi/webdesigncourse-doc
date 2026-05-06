@@ -1,8 +1,11 @@
 git init -->create a folder 
 git status -->check the staging area and working directory
-git add "filename"--> add a file from working directory to staging area
+git add <filename>--> add a file from working directory to staging area
 git commit -m "message" --> add the file from staging area to commit history
 git pull --> upload document from commit history(.git folder) to github this will download CONFLICTS message
 git push --> download document from github to commit history
+git branch <name> --> creates a branch
+git checkout <name> --> go into that branch
+git merge <name> --> merge this branch to main branch
 
 ** when multiple people pushed the different files with the same name to GH, git will creating warnings stating CONFLICTS! so while uploading we do git pull first, if there is no CONFLICTS, we do push, and if there is CONFLICTS, we need to talk with coworkers.
