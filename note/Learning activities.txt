@@ -3,3 +3,11 @@ Learning activities
 1. SUBURI - fast,short repeat --> muscle memory
 2. KATA - Problem with a known solution, it has a wider perspective and it aim for perfection (websites for this : codewars/Leetcode/Adventofcode)
 3. RANOORI - freestyle coding, pick your own problem
+
+Reading list(of python libraries):
+
+1. Polars (next generation of pandas)
+2. httpx (read a website in python)
+3. pytest (Helps to check the code is doing the right thing or not)
+4. duckdb (it brings its onw database, no need to install every database)
+5. 
