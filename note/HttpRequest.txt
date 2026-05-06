@@ -1,5 +1,5 @@
-HTTP get: （this commade gives a url）mysite.pyany.org?user=kristian&text=bananas --> this has 2048 characters limits
-HTTP post (this commande gives a url + data)mysite.pyany.org/submit
+HTTP get: mysite.pyany.org?user=kristian&text=bananas --> this has 2048 characters limits
+HTTP post mysite.pyany.org/submit
 payload{ "User" : "Kristian",
     "tex" : "bananas",
     "File" : "5AC"
