@@ -7,3 +7,4 @@
  5.mkdir create a folder
  6. rm or del to delete a document
  7. rmdir delete the folder
+ 8. mv to move document

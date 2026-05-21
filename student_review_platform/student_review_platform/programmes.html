@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Programmes | ReviewHub</title>
+  <meta name="description" content="ReviewHub is a student review platform for schools, professors, and academic programmes.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+  <nav class="navbar navbar-expand-lg site-navbar sticky-top" aria-label="Main navigation">
+    <section class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img class="logo-img" src="images/logo.svg" alt="ReviewHub logo">
+        ReviewHub
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <section class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html#search-school">Search School</a></li>
+          <li class="nav-item"><a class="nav-link" href="professors.html">Professors</a></li>
+          <li class="nav-item"><a class="nav-link" href="programmes.html">Programmes</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact & Imprint</a></li>
+        </ul>
+      </section>
+    </section>
+  </nav>
+</header>
+  
+<main id="main-content">
+  <section class="py-5 bg-cream">
+    <article class="container text-center">
+      <h1 class="display-5 section-title">Programmes</h1>
+      <p class="lead">Compare academic programmes through structured scores and student feedback.</p>
+    </article>
+  </section>
+
+  <section id="search" class="py-5">
+    <article class="container">
+      <form class="search-card p-4 p-md-5 mx-auto" aria-label="Search programme" style="max-width: 860px;">
+        <h2 class="h3 text-center mb-4">Explore your programme of interest</h2>
+        <label class="visually-hidden" for="programme-search">Programme name</label>
+        <section class="input-group input-group-lg">
+          <input id="programme-search" class="form-control search-control" type="search" placeholder="Enter the name of Programme here">
+          <button class="btn btn-brand rounded-pill ms-md-3 px-4 mt-3 mt-md-0" type="button" data-reveal-target="#programme-results">Search</button>
+        </section>
+        <p class="text-center mt-3 mb-0"><a href="register.html#programme">Can’t find your programme? Register here</a></p>
+      </form>
+    </article>
+  </section>
+
+  <section id="programme-results" class="py-5 d-none" aria-labelledby="programme-results-heading">
+    <article class="container-xl">
+      <h2 id="programme-results-heading" class="section-title mb-4">Programme matching results</h2>
+      <section class="list-group">
+        <a class="list-group-item programme-row p-4" href="#overview">
+          <section class="row g-3 align-items-center">
+            <h3 class="col-md-4 h4 mb-0">Programme 1</h3>
+            <p class="col-md-3 mb-0">Year: 2025–2026</p>
+            <p class="col-md-3 mb-0">Department: Data & AI</p>
+            <p class="col-md-2 mb-0 text-md-end">View reviews</p>
+          </section>
+        </a>
+        <a class="list-group-item programme-row p-4" href="#overview">
+          <section class="row g-3 align-items-center">
+            <h3 class="col-md-4 h4 mb-0">Programme 2</h3>
+            <p class="col-md-3 mb-0">Year: 2025–2026</p>
+            <p class="col-md-3 mb-0">Department: Marketing</p>
+            <p class="col-md-2 mb-0 text-md-end">View reviews</p>
+          </section>
+        </a>
+        <a class="list-group-item programme-row p-4" href="#overview">
+          <section class="row g-3 align-items-center">
+            <h3 class="col-md-4 h4 mb-0">Programme 3</h3>
+            <p class="col-md-3 mb-0">Year: 2025–2026</p>
+            <p class="col-md-3 mb-0">Department: Finance</p>
+            <p class="col-md-2 mb-0 text-md-end">View reviews</p>
+          </section>
+        </a>
+      </section>
+    </article>
+  </section>
+
+  <section id="overview" class="py-5" aria-labelledby="programme-overview-heading">
+    <article class="container-xl">
+      <h2 id="programme-overview-heading" class="section-title mb-4">Reviews of the programme</h2>
+      <section class="row g-4">
+        <aside class="col-lg-4">
+          <section class="card profile-summary overflow-hidden">
+            <img class="card-img-top result-image" src="images/programme-placeholder.svg" alt="Academic programme placeholder illustration">
+            <section class="card-body text-center">
+              <h3 class="info-line">Programme</h3>
+              <p class="info-line">Year</p>
+              <p class="info-line">Department</p>
+            </section>
+          </section>
+        </aside>
+
+        <section class="col-lg-8">
+          <section class="rating-panel p-4 p-md-5">
+            <section class="row g-4 align-items-start">
+              <section class="col-md-7 rating-distribution" aria-label="Rating distribution">
+                <p><span>5</span><progress max="100" value="82">82%</progress></p>
+                <p><span>4</span><progress max="100" value="68">68%</progress></p>
+                <p><span>3</span><progress max="100" value="36">36%</progress></p>
+                <p><span>2</span><progress max="100" value="22">22%</progress></p>
+                <p><span>1</span><progress max="100" value="9">9%</progress></p>
+              </section>
+              <section class="col-md-5 text-center">
+                <p class="display-5 mb-0">4.1</p>
+                <p class="star-line" aria-label="4 out of 5 stars">★★★★<span class="empty-star">★</span></p>
+                <a class="btn btn-soft rounded-pill px-4" href="#rate">I want to rate</a>
+              </section>
+            </section>
+
+            <hr>
+
+            <section class="d-flex flex-column flex-lg-row gap-4 align-items-lg-start">
+              <ul class="keyword-list flex-grow-1" aria-label="Programme review keywords">
+                <li>Practical</li><li>Career support</li><li>Workload</li>
+                <li>International</li><li>Organised</li><li>Expensive</li>
+                <li>Industry links</li><li>Resources</li><li>Student life</li>
+              </ul>
+              <button class="btn btn-soft rounded-pill" data-sort-reviews="#programme-review-list">Sort: lowest first</button>
+            </section>
+
+            <section id="programme-review-list" class="review-snippet mt-4" aria-label="Programme reviews">
+              <article class="review-card p-3 mb-3" data-review-rating="5">
+                <h3 class="h5">Strong practical projects</h3>
+                <p class="mb-1">Rating: 5/5</p>
+                <p class="mb-0">The project-based learning helped connect theory with industry practice.</p>
+              </article>
+              <article class="review-card p-3 mb-3" data-review-rating="4">
+                <h3 class="h5">Good curriculum, uneven organisation</h3>
+                <p class="mb-1">Rating: 4/5</p>
+                <p class="mb-0">The courses were useful, but communication about deadlines could be clearer.</p>
+              </article>
+              <article class="review-card p-3" data-review-rating="3">
+                <h3 class="h5">Mixed career support</h3>
+                <p class="mb-1">Rating: 3/5</p>
+                <p class="mb-0">Some career events were helpful, but more targeted support would improve the programme.</p>
+              </article>
+            </section>
+          </section>
+        </section>
+      </section>
+    </article>
+  </section>
+
+  <section id="rate" class="py-5 bg-cream" aria-labelledby="rate-programme-heading">
+    <article class="container">
+      <section class="rating-panel p-4 p-md-5 mx-auto" style="max-width: 980px;">
+        <h2 id="rate-programme-heading" class="section-title mb-4">Rate the programme</h2>
+        <form aria-label="Rate programme form">
+          <fieldset>
+            <legend class="visually-hidden">Programme rating categories</legend>
+            <section class="row g-4">
+              <article class="col-md-6"><label class="form-label">Curriculum Quality</label><section class="rating-stars" data-rating-group><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button">★</button><output class="visually-hidden">4 out of 5</output></section></article>
+              <article class="col-md-6"><label class="form-label">Teaching Quality</label><section class="rating-stars" data-rating-group><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><output class="visually-hidden">5 out of 5</output></section></article>
+              <article class="col-md-6"><label class="form-label">Organisation & Communication</label><section class="rating-stars" data-rating-group><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button">★</button><output class="visually-hidden">4 out of 5</output></section></article>
+              <article class="col-md-6"><label class="form-label">Career Support</label><section class="rating-stars" data-rating-group><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button">★</button><output class="visually-hidden">4 out of 5</output></section></article>
+              <article class="col-md-6"><label class="form-label">Resources & Support</label><section class="rating-stars" data-rating-group><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><output class="visually-hidden">5 out of 5</output></section></article>
+              <article class="col-md-6"><label class="form-label">Value for Money</label><section class="rating-stars" data-rating-group><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button" class="active">★</button><button type="button">★</button><button type="button">★</button><output class="visually-hidden">3 out of 5</output></section></article>
+            </section>
+          </fieldset>
+
+          <label class="form-label mt-4" for="programme-review">Detailed feedback</label>
+          <textarea id="programme-review" class="form-control review-textarea" placeholder="What did you like? What could be improved? Would you recommend this programme?"></textarea>
+          <button class="btn btn-brand rounded-pill px-5 mt-4" type="button">Submit Review</button>
+        </form>
+      </section>
+    </article>
+  </section>
+</main>
+
+  <footer class="bg-cream border-top py-4 mt-5">
+  <section class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+    <p class="mb-0">&copy; 2026 ReviewHub. Student review platform prototype.</p>
+    <nav aria-label="Footer navigation">
+      <a class="footer-link me-3" href="contact.html#contact">Contact</a>
+      <a class="footer-link me-3" href="contact.html#imprint">Imprint</a>
+      <a class="footer-link" href="contact.html#sources">Image sources</a>
+    </nav>
+  </section>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

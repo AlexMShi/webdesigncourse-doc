@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | ReviewHub</title>
+  <meta name="description" content="ReviewHub is a student review platform for schools, professors, and academic programmes.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+  <nav class="navbar navbar-expand-lg site-navbar sticky-top" aria-label="Main navigation">
+    <section class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img class="logo-img" src="images/logo.svg" alt="ReviewHub logo">
+        ReviewHub
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <section class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html#search-school">Search School</a></li>
+          <li class="nav-item"><a class="nav-link" href="professors.html">Professors</a></li>
+          <li class="nav-item"><a class="nav-link" href="programmes.html">Programmes</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact & Imprint</a></li>
+        </ul>
+      </section>
+    </section>
+  </nav>
+</header>
+  
+<main id="main-content">
+  <section class="py-5 bg-cream">
+    <article class="container text-center">
+      <h1 class="display-5 section-title">Contact & Imprint</h1>
+      <p class="lead">Send feedback about ReviewHub or review the project information.</p>
+    </article>
+  </section>
+
+  <section id="contact" class="py-5">
+    <article class="container">
+      <section class="contact-panel p-4 p-md-5 mx-auto" style="max-width: 900px;">
+        <h2 class="section-title mb-4">Contact form</h2>
+        <section id="contact-alert" class="alert alert-success d-none" tabindex="-1" role="status">Thank you. Your message has been prepared for this prototype.</section>
+        <form id="contact-form" aria-label="Contact form">
+          <section class="row g-3">
+            <article class="col-md-6">
+              <label class="form-label" for="contact-name">Name</label>
+              <input id="contact-name" class="form-control" type="text" required>
+            </article>
+            <article class="col-md-6">
+              <label class="form-label" for="contact-email">Email</label>
+              <input id="contact-email" class="form-control" type="email" required>
+            </article>
+            <article class="col-12">
+              <label class="form-label" for="contact-topic">Topic</label>
+              <select id="contact-topic" class="form-select">
+                <option>General feedback</option>
+                <option>Incorrect school information</option>
+                <option>Incorrect professor information</option>
+                <option>Incorrect programme information</option>
+              </select>
+            </article>
+            <article class="col-12">
+              <label class="form-label" for="contact-message">Message</label>
+              <textarea id="contact-message" class="form-control" rows="6" required></textarea>
+            </article>
+          </section>
+          <button class="btn btn-brand rounded-pill px-5 mt-4" type="submit">Send message</button>
+        </form>
+      </section>
+    </article>
+  </section>
+
+  <section id="imprint" class="py-5 bg-cream">
+    <article class="container">
+      <h2 class="section-title mb-4">Imprint</h2>
+      <section class="row g-4">
+        <article class="col-md-6">
+          <section class="feature-card p-4 h-100">
+            <h3 class="h4">Project owner</h3>
+            <p class="mb-1">ReviewHub Student Web Project</p>
+            <p class="mb-1">Created for a graduation webpage assignment.</p>
+            <p class="mb-0">Contact: student@example.com</p>
+          </section>
+        </article>
+        <article class="col-md-6">
+          <section class="feature-card p-4 h-100">
+            <h3 class="h4">Purpose</h3>
+            <p class="mb-0">This website is a static educational prototype. It does not publish real personal reviews or real institutional data.</p>
+          </section>
+        </article>
+      </section>
+    </article>
+  </section>
+
+  <section id="sources" class="py-5">
+    <article class="container">
+      <h2 class="section-title mb-4">Image sources</h2>
+      <ul class="source-list">
+        <li>Logo, school, professor, and programme illustrations are original SVG placeholder images created for this project.</li>
+        <li>No external photographic images are used in the submitted prototype.</li>
+        <li>Bootstrap is loaded from the official Bootstrap CDN for layout and components.</li>
+      </ul>
+    </article>
+  </section>
+</main>
+
+  <footer class="bg-cream border-top py-4 mt-5">
+  <section class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+    <p class="mb-0">&copy; 2026 ReviewHub. Student review platform prototype.</p>
+    <nav aria-label="Footer navigation">
+      <a class="footer-link me-3" href="contact.html#contact">Contact</a>
+      <a class="footer-link me-3" href="contact.html#imprint">Imprint</a>
+      <a class="footer-link" href="contact.html#sources">Image sources</a>
+    </nav>
+  </section>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

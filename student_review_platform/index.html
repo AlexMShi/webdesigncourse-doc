@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home | ReviewHub</title>
+  <meta name="description" content="ReviewHub is a student review platform for schools, professors, and academic programmes.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+<header>
+  <nav class="navbar navbar-expand-lg site-navbar sticky-top" aria-label="Main navigation">
+    <section class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+        <img class="logo-img" src="images/logo.svg" alt="ReviewHub logo">
+        ReviewHub
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <section class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html#search-school">Search School</a></li>
+          <li class="nav-item"><a class="nav-link" href="professors.html">Professors</a></li>
+          <li class="nav-item"><a class="nav-link" href="programmes.html">Programmes</a></li>
+          <li class="nav-item"><a class="nav-link" href="register.html">Register</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact & Imprint</a></li>
+        </ul>
+      </section>
+    </section>
+  </nav>
+</header>
+  
+<main id="main-content">
+  <section class="hero-section d-flex align-items-center">
+    <article class="container text-center py-5">
+      <h1 class="display-3 display-title mb-4">Review schools,<br>professors, and programmes</h1>
+      <p class="lead mx-auto mb-5" style="max-width: 820px;">A student-driven review platform for comparing academic experiences through ratings, keywords, and detailed feedback.</p>
+      <section class="d-flex flex-column flex-sm-row justify-content-center gap-3" aria-label="Main actions">
+        <a class="btn btn-brand btn-lg rounded-pill px-5" href="#search-school">Start with a school</a>
+        <a class="btn btn-soft btn-lg rounded-pill px-5" href="professors.html">Find a professor</a>
+        <a class="btn btn-soft btn-lg rounded-pill px-5" href="programmes.html">Find a programme</a>
+      </section>
+    </article>
+  </section>
+
+  <section id="search-school" class="py-5">
+    <article class="container">
+      <header class="text-center mb-4">
+        <h2 class="section-title">Explore your school of interest</h2>
+        <p class="text-muted">Search first, then choose whether to view professor reviews or programme reviews.</p>
+      </header>
+      <form class="search-card p-4 p-md-5 mx-auto" aria-label="Search school" style="max-width: 860px;">
+        <label class="visually-hidden" for="school-search">School name</label>
+        <section class="input-group input-group-lg">
+          <input id="school-search" class="form-control search-control" type="search" placeholder="Enter the name of school here" aria-describedby="school-search-help">
+          <button class="btn btn-brand rounded-pill ms-md-3 px-4 mt-3 mt-md-0" type="button" data-reveal-target="#school-results">Search</button>
+        </section>
+        <p id="school-search-help" class="form-text text-center mt-3">Example: emlyon business school, ESCP, HEC Paris</p>
+      </form>
+    </article>
+  </section>
+
+  <section id="school-results" class="py-5 d-none" aria-labelledby="school-results-heading">
+    <article class="container-xl">
+      <header class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+        <section>
+          <h2 id="school-results-heading" class="section-title">School matching results</h2>
+          <p class="text-muted mb-0">Choose the correct campus, then continue to professors or programmes.</p>
+        </section>
+        <a class="btn btn-soft rounded-pill px-4" href="register.html#school">Can’t find your school? Register here</a>
+      </header>
+
+      <section class="row g-4">
+        <article class="col-12 col-md-4">
+          <section class="card result-card h-100 overflow-hidden">
+            <img class="card-img-top result-image" src="images/school-placeholder.svg" alt="Illustration of a school building">
+            <section class="card-body text-center">
+              <h3 class="h4 info-line">School Match 1</h3>
+              <p class="info-line">Campus: Paris</p>
+              <p class="info-line">Address: 1 Academic Street</p>
+              <section class="d-grid gap-2 mt-3">
+                <a class="btn btn-brand rounded-pill" href="professors.html">View professors</a>
+                <a class="btn btn-soft rounded-pill" href="programmes.html">View programmes</a>
+              </section>
+            </section>
+          </section>
+        </article>
+
+        <article class="col-12 col-md-4">
+          <section class="card result-card h-100 overflow-hidden">
+            <img class="card-img-top result-image" src="images/school-placeholder.svg" alt="Illustration of a school building">
+            <section class="card-body text-center">
+              <h3 class="h4 info-line">School Match 2</h3>
+              <p class="info-line">Campus: Lyon</p>
+              <p class="info-line">Address: 2 Learning Avenue</p>
+              <section class="d-grid gap-2 mt-3">
+                <a class="btn btn-brand rounded-pill" href="professors.html">View professors</a>
+                <a class="btn btn-soft rounded-pill" href="programmes.html">View programmes</a>
+              </section>
+            </section>
+          </section>
+        </article>
+
+        <article class="col-12 col-md-4">
+          <section class="card result-card h-100 overflow-hidden">
+            <img class="card-img-top result-image" src="images/school-placeholder.svg" alt="Illustration of a school building">
+            <section class="card-body text-center">
+              <h3 class="h4 info-line">School Match 3</h3>
+              <p class="info-line">Campus: Berlin</p>
+              <p class="info-line">Address: 3 Campus Road</p>
+              <section class="d-grid gap-2 mt-3">
+                <a class="btn btn-brand rounded-pill" href="professors.html">View professors</a>
+                <a class="btn btn-soft rounded-pill" href="programmes.html">View programmes</a>
+              </section>
+            </section>
+          </section>
+        </article>
+      </section>
+    </article>
+  </section>
+
+  <section class="py-5 bg-cream">
+    <article class="container">
+      <header class="text-center mb-5">
+        <h2 class="section-title">How ReviewHub works</h2>
+      </header>
+      <section class="row g-4">
+        <article class="col-md-4">
+          <section class="feature-card p-4 h-100">
+            <h3 class="h4">1. Search</h3>
+            <p>Start from a school, professor, or programme and find the closest match.</p>
+          </section>
+        </article>
+        <article class="col-md-4">
+          <section class="feature-card p-4 h-100">
+            <h3 class="h4">2. Compare</h3>
+            <p>Use ratings, review keywords, and written comments to understand the experience.</p>
+          </section>
+        </article>
+        <article class="col-md-4">
+          <section class="feature-card p-4 h-100">
+            <h3 class="h4">3. Review</h3>
+            <p>Share structured scores and detailed feedback to help future students.</p>
+          </section>
+        </article>
+      </section>
+    </article>
+  </section>
+</main>
+
+  <footer class="bg-cream border-top py-4 mt-5">
+  <section class="container d-flex flex-column flex-md-row justify-content-between gap-3">
+    <p class="mb-0">&copy; 2026 ReviewHub. Student review platform prototype.</p>
+    <nav aria-label="Footer navigation">
+      <a class="footer-link me-3" href="contact.html#contact">Contact</a>
+      <a class="footer-link me-3" href="contact.html#imprint">Imprint</a>
+      <a class="footer-link" href="contact.html#sources">Image sources</a>
+    </nav>
+  </section>
+</footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

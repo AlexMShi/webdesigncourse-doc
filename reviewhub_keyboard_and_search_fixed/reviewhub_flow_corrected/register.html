@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Register | Ver·O</title>
+    <meta
+      name="description"
+      content="Student review platform for schools, professors, and academic programmes."
+    >
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    >
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
+    <header>
+      <nav class="navbar navbar-expand-lg site-navbar sticky-top" aria-label="Main navigation">
+        <section class="container-fluid px-4">
+          <button
+            class="menu-button me-3"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#sideMenu"
+            aria-controls="sideMenu"
+            aria-label="Open menu"
+          >
+            ☰
+          </button>
+
+          <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+            
+            Ver·O
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#mainNav"
+            aria-controls="mainNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <section class="collapse navbar-collapse" id="mainNav">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="school-search.html">Pick School</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="register.html">Register</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact &amp; Imprint</a>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </nav>
+    </header>
+
+    <aside
+      class="offcanvas offcanvas-start side-menu"
+      tabindex="-1"
+      id="sideMenu"
+      aria-labelledby="sideMenuLabel"
+    >
+      <header class="offcanvas-header">
+        <h2 class="offcanvas-title h5" id="sideMenuLabel">Ver·O Menu</h2>
+
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close menu"
+        ></button>
+      </header>
+
+      <section class="offcanvas-body">
+        <nav aria-label="Sidebar navigation">
+          <section class="sidebar-group">
+            <h3>School</h3>
+            <a href="school-search.html">Change selected school</a>
+            <a href="school-results.html">School results</a>
+          </section>
+
+          <section class="sidebar-group">
+            <h3>Rate</h3>
+            <a href="professors.html">Rate Professor</a>
+            <a href="programmes.html">Rate Programme</a>
+          </section>
+
+          <section class="sidebar-group">
+            <h3>Check Reviews</h3>
+            <a href="professors.html">Professor Ratings</a>
+            <a href="programmes.html">Programme Ratings</a>
+          </section>
+
+          <section class="sidebar-group">
+            <h3>Register Missing Info</h3>
+            <a href="register.html#school">Register School</a>
+            <a href="register.html#professor">Register Professor</a>
+            <a href="register.html#programme">Register Programme</a>
+          </section>
+
+          <section class="sidebar-group">
+            <h3>Support</h3>
+            <a href="contact.html#contact">Contact</a>
+            <a href="contact.html#imprint">Imprint</a>
+            <a href="contact.html#sources">Image Sources</a>
+          </section>
+        </nav>
+      </section>
+    </aside>
+
+    <main id="main-content">
+      <section class="py-5 bg-cream text-center">
+        <article class="container">
+          <h1 class="display-5 section-title">Register missing information</h1>
+          <p class="lead">
+            Add a school, professor, or programme when it cannot be found.
+          </p>
+        </article>
+      </section>
+
+      <section class="py-5">
+        <article class="container">
+          <ul
+            class="nav nav-pills justify-content-center gap-2 mb-4"
+            role="tablist"
+            aria-label="Registration categories"
+          >
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link active btn-soft"
+                data-bs-toggle="pill"
+                data-bs-target="#school"
+                type="button"
+                role="tab"
+                aria-controls="school"
+                aria-selected="true"
+              >
+                School
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link btn-soft"
+                data-bs-toggle="pill"
+                data-bs-target="#professor"
+                type="button"
+                role="tab"
+                aria-controls="professor"
+                aria-selected="false"
+              >
+                Professor
+              </button>
+            </li>
+
+            <li class="nav-item" role="presentation">
+              <button
+                class="nav-link btn-soft"
+                data-bs-toggle="pill"
+                data-bs-target="#programme"
+                type="button"
+                role="tab"
+                aria-controls="programme"
+                aria-selected="false"
+              >
+                Programme
+              </button>
+            </li>
+          </ul>
+
+          <section class="tab-content">
+            <article
+              class="tab-pane fade show active panel p-4 p-md-5"
+              id="school"
+              role="tabpanel"
+            >
+              <h2 class="h3 mb-4">Register School</h2>
+
+              <form class="row g-3" aria-label="Register school form">
+                <article class="col-md-6">
+                  <label class="form-label" for="school-name">School name</label>
+                  <input id="school-name" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="school-country">Country / Region</label>
+                  <input id="school-country" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="school-campus">Campus</label>
+                  <input id="school-campus" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="school-city">City</label>
+                  <input id="school-city" class="form-control" type="text">
+                </article>
+
+                <article class="col-12">
+                  <label class="form-label" for="school-address">Address</label>
+                  <input id="school-address" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="school-website">Official website</label>
+                  <input id="school-website" class="form-control" type="url">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="school-type">School type</label>
+                  <select id="school-type" class="form-select">
+                    <option>Business school</option>
+                    <option>University</option>
+                    <option>Engineering school</option>
+                    <option>Other</option>
+                  </select>
+                </article>
+
+                <article class="col-12">
+                  <label class="form-label" for="school-image">Upload school image</label>
+                  <input id="school-image" class="form-control" type="file" accept="image/*">
+                </article>
+
+                <article class="col-12">
+                  <button class="btn btn-brand rounded-pill px-5" type="button">
+                    Submit School
+                  </button>
+                </article>
+              </form>
+            </article>
+
+            <article
+              class="tab-pane fade panel p-4 p-md-5"
+              id="professor"
+              role="tabpanel"
+            >
+              <h2 class="h3 mb-4">Register Professor</h2>
+
+              <form class="row g-3" aria-label="Register professor form">
+                <article class="col-md-6">
+                  <label class="form-label" for="professor-name">Professor full name</label>
+                  <input id="professor-name" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="professor-role">Title / role</label>
+                  <select id="professor-role" class="form-select">
+                    <option>Professor</option>
+                    <option>Lecturer</option>
+                    <option>Tutor</option>
+                    <option>Other</option>
+                  </select>
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="professor-school">School</label>
+                  <input id="professor-school" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="professor-department">Department / faculty</label>
+                  <input id="professor-department" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="professor-modules">Modules / subjects taught</label>
+                  <input id="professor-modules" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="professor-programmes">Related programme(s)</label>
+                  <input id="professor-programmes" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="professor-email">Official email optional</label>
+                  <input id="professor-email" class="form-control" type="email">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="professor-profile">Official profile link optional</label>
+                  <input id="professor-profile" class="form-control" type="url">
+                </article>
+
+                <article class="col-12">
+                  <label class="form-label" for="professor-image">Upload professor image</label>
+                  <input id="professor-image" class="form-control" type="file" accept="image/*">
+                </article>
+
+                <article class="col-12">
+                  <button class="btn btn-brand rounded-pill px-5" type="button">
+                    Submit Professor
+                  </button>
+                </article>
+              </form>
+            </article>
+
+            <article
+              class="tab-pane fade panel p-4 p-md-5"
+              id="programme"
+              role="tabpanel"
+            >
+              <h2 class="h3 mb-4">Register Programme</h2>
+
+              <form class="row g-3" aria-label="Register programme form">
+                <article class="col-md-6">
+                  <label class="form-label" for="programme-name">Programme name</label>
+                  <input id="programme-name" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="programme-school">School</label>
+                  <input id="programme-school" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-4">
+                  <label class="form-label" for="programme-level">Degree level</label>
+                  <select id="programme-level" class="form-select">
+                    <option>Bachelor</option>
+                    <option>Master</option>
+                    <option>MSc</option>
+                    <option>MBA</option>
+                    <option>Other</option>
+                  </select>
+                </article>
+
+                <article class="col-md-4">
+                  <label class="form-label" for="programme-duration">Duration</label>
+                  <input id="programme-duration" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-4">
+                  <label class="form-label" for="programme-language">Teaching language</label>
+                  <input id="programme-language" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="programme-department">Department</label>
+                  <input id="programme-department" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="programme-campus">Campus</label>
+                  <input id="programme-campus" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="programme-year">Academic year / intake</label>
+                  <input id="programme-year" class="form-control" type="text">
+                </article>
+
+                <article class="col-md-6">
+                  <label class="form-label" for="programme-link">Official programme link</label>
+                  <input id="programme-link" class="form-control" type="url">
+                </article>
+
+                <article class="col-12">
+                  <label class="form-label" for="programme-description">Short description</label>
+                  <textarea id="programme-description" class="form-control" rows="3"></textarea>
+                </article>
+
+                <article class="col-12">
+                  <label class="form-label" for="programme-image">Upload programme image</label>
+                  <input id="programme-image" class="form-control" type="file" accept="image/*">
+                </article>
+
+                <article class="col-12">
+                  <button class="btn btn-brand rounded-pill px-5" type="button">
+                    Submit Programme
+                  </button>
+                </article>
+              </form>
+            </article>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer bg-cream border-top py-3">
+      <section class="container-fluid px-4 d-flex flex-column flex-md-row justify-content-between gap-3">
+        <p class="mb-0">
+          &copy; 2026 Ver·O. Static student webpage prototype.
+        </p>
+
+        <nav aria-label="Footer navigation">
+          <a class="footer-link me-3" href="contact.html#contact">Contact</a>
+          <a class="footer-link me-3" href="contact.html#imprint">Imprint</a>
+          <a class="footer-link" href="contact.html#sources">Image sources</a>
+        </nav>
+      </section>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

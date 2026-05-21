@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="600" viewBox="0 0 900 600" role="img" aria-label="School building illustration">
+  <rect width="900" height="600" fill="#b8b49d"/>
+  <path d="M450 90 145 240h610L450 90z" fill="#5d584b"/>
+  <rect x="190" y="240" width="520" height="260" fill="#f7f6ef" stroke="#5d584b" stroke-width="14"/>
+  <rect x="245" y="295" width="90" height="70" fill="#dedbcf"/>
+  <rect x="405" y="295" width="90" height="70" fill="#dedbcf"/>
+  <rect x="565" y="295" width="90" height="70" fill="#dedbcf"/>
+  <rect x="395" y="405" width="110" height="95" fill="#7c7764"/>
+  <path d="M150 500h600" stroke="#5d584b" stroke-width="16" stroke-linecap="round"/>
+</svg>
